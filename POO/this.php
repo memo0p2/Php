@@ -1,14 +1,4 @@
 <?php
-// Ejemplo #1 - Como lo hariamos sin Programacion Orientada a Objetos
-// $nombre = 'Carlos';
-// $edad = 23;
-// $pais = 'Mexico';
-
-// $nombre2 = 'Alejandro';
-// $edad2 = 30;
-// $pais2 = 'España';
-
-// echo $nombre;
 
 class Persona {
 	public $nombre;
@@ -16,7 +6,7 @@ class Persona {
 	public $pais;
 
 	public function mostrarInformacion(){
-		echo 'Hola Mundo';
+		echo $this->nombre . ' tiene ' . $this->edad . ' años de edad y es de ' . $this->pais;
 	}
 }
 
@@ -24,12 +14,12 @@ $carlos = new Persona;
 $carlos->nombre = 'Carlos Arturo';
 $carlos->edad = 23;
 $carlos->pais = 'Mexico';
-
 $carlos->mostrarInformacion();
 
-echo $carlos->nombre . ' tiene ' . $carlos->edad . ' años de edad';
+echo '<br />';
 
 $alejandro = new Persona;
 $alejandro->nombre = 'Alejandro';
 $alejandro->edad = 30;
 $alejandro->pais = 'España';
+$alejandro->mostrarInformacion();
